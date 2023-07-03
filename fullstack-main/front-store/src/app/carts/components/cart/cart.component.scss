@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* ----- Variables ----- */
+$color-primary: #f6ebda;
+$color-secondary: #ffcb7c;
+$color-highlight: #ff3f40;
+
+.container {
+  background: url(../../../../assets/images/about/Exclude.svg);
+  background-color: $color-primary;
+  padding-top: 1px;
+  border-radius: 7px;
+}
+
+.cartBox {
+  border: 1px solid $color-secondary;
+  border-radius: 7px;
+  padding: 0 20px;
+  margin: 50px 0;
+  margin-top: 15%;
+  background-color: $color-secondary;
+  padding: 2%;
+}
+
+.title {
+  color: $color-highlight;
+}
+
+.total {
+  color: black;
+  border-radius: 7px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  span {
+    color: rgb(78, 174, 78);
+    font-size: 20px;
+  }
+}
+
+.headCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+}
+
+.clear-btn {
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  &:hover {
+    background-color: rgb(224, 78, 78);
+    color: #fff !important;
+    box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.product-img {
+  // min-width: 20%;
+  max-width: 45%;
+  height: 8vh;
+  // max-height: auto;
+  // border-radius: 7px;
+}
+
+.product-length {
+  color: rgb(78, 174, 78);
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 2px 4px;
+  margin-right: 6px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headCart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+thead {
+  border-radius: 7px;
+}
+.table-body {
+  .table-row {
+    td {
+      border-bottom: 0;
+      text-align: center;
+      vertical-align: middle;
+      // background-color: $color-primary;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+  }
+
+  .form-control {
+    text-align: center;
+    width: 70px;
+    margin: 5px;
+  }
+
+  .btn-dark {
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+    &:hover {
+      background-color: rgb(78, 174, 78);
+      color: #fff !important;
+      box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+
+  .delete-btn {
+    padding: 7px;
+    color: white;
+    background-color: #e63946;
+    border-radius: 7px;
+    border: none;
+    margin-right: 50px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: #ff912b;
+      color: #fff !important;
+      box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+}

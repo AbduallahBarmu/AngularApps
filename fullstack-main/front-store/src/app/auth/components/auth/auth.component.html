@@ -1,0 +1,139 @@
+<!-- <div class="row">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <div class="alert alert-danger" *ngIf="errorMessage">
+      <p>{{ errorMessage }}</p>
+    </div>
+    <div *ngIf="isLoading" style="text-align: center">
+      <app-spinner></app-spinner>
+    </div>
+
+    <div class="box-form">
+      <div class="left">
+        <div class="overlay">
+          <h1>Hello World.</h1>
+          <p>
+            This is the gain for the Dashboard you must login as an Admin, if
+            you do not have an account you have to signup
+          </p>
+        </div>
+      </div>
+
+      <div class="right">
+        <h5>Login</h5>
+        <p>
+          Don't have an account? , Create Your Account it takes less than a
+          minute
+        </p>
+
+        <form
+          class="form"
+          #authForm="ngForm"
+          (ngSubmit)="onSubmit(authForm)"
+          *ngIf="!isLoading"
+        >
+          <div class="form-body">
+            <div class="form-group">
+              <label for="email">
+                <i>
+                  <mat-icon class="icon">contact_mail</mat-icon> </i
+                >Email
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your Email"
+                ngModel
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password"
+                ><i><mat-icon class="icon">lock</mat-icon> </i>Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter your Password"
+                ngModel
+                name="password"
+                required
+                minlength="6"
+              />
+            </div>
+          </div>
+          <div>
+            <button class="btn" type="submit" [disabled]="!authForm.valid">
+              {{ isLoginMode ? "Login" : "Sign Up" }}
+            </button>
+            <button class="btn" type="button" (click)="onSwitchMode()">
+              Switch To {{ isLoginMode ? "Sign Up" : "Login" }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<html lang="en">
+  <body>
+    <div class="box-form">
+      <div class="left">
+        <div class="overlay">
+          <h1>Hola Amigo</h1>
+          <p>
+            This Is Your Gain For The Dashboard, You Must Login As An Admin, If
+            You Do Not Have An Account You Have To Signup
+          </p>
+        </div>
+      </div>
+
+      <div class="right">
+        <h5>Login</h5>
+        <p>
+          Don't have an account ? Create Your Account, it takes less than a
+          minute
+        </p>
+
+        <form
+          class="form"
+          #authForm="ngForm"
+          (ngSubmit)="onSubmit(authForm)"
+          *ngIf="!isLoading"
+        >
+          <div class="inputs">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your Email"
+              ngModel
+              name="email"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Enter your Password"
+              ngModel
+              name="password"
+              required
+              minlength="6"
+            />
+          </div>
+          <div class="btn-form">
+            <button class="btn" type="submit" [disabled]="!authForm.valid">
+              {{ isLoginMode ? "Login" : "Sign Up" }}
+            </button>
+            <button class="btn" type="button" (click)="onSwitchMode()">
+              Switch To {{ isLoginMode ? "Sign Up" : "Login" }}
+            </button>
+          </div>
+        </form>
+        <br /><br />
+      </div>
+    </div>
+  </body>
+</html>

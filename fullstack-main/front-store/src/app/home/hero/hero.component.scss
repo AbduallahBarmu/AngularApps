@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.container {
+  max-width: 1200px; /* Set the maximum width of the container according to your needs */
+  margin: 0 auto; /* Center the container horizontally */
+  height: 100vh; /* Set the height of the container */
+  background-color: #f6ebda;
+  background-image: url(../../../assets/images/about/Exclude.svg);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 7%;
+}
+
+.left-col {
+  flex: 1;
+  padding-right: 20px;
+  color: #000;
+
+  h1 {
+    font-family: "Poppins";
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    color: #2f2105;
+    span {
+      color: #ff902b;
+    }
+  }
+
+  p {
+    font-family: "Poppins";
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    color: #7e7d7a;
+  }
+
+  button {
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;
+    gap: 10px;
+    color: #ffffff;
+    background: #443416;
+    border-radius: 33px;
+    border: 2px solid #ff902b;
+
+    mat-icon {
+      width: 22px;
+      height: 22px;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      color: #ff902b;
+    }
+  }
+}
+
+.right-col {
+  img {
+    max-width: 100%; /* Ensure the image fits within its container */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+
+    .left-col,
+    .right-col {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .right-col {
+      img {
+        max-width: 60%;
+      }
+    }
+    .left-col {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

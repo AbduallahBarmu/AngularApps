@@ -1,0 +1,23 @@
+<header>
+  <nav>
+    <div class="content">
+      <div class="logo" routerLink="/home">
+        <img src="../../../../assets/images/home/logo_coffe.svg" alt="">
+      </div>
+
+      <div class="nav-items">
+        <ul>
+          <li routerLink="/products" routerLinkActive="active">Our Products</li>
+          <li *ngIf="!isLogedIn()" routerLink="/auth" routerLinkActive="active">Login</li>
+          <li routerLink="/dashboard" *ngIf="isLogedIn()">Dashboard</li>
+          <li routerLink="/auth" routerLinkActive="active" *ngIf="isLogedIn()" (click)="authService.logout()">Log Out</li>
+        </ul>
+      </div>
+
+      <div class="cart-icon" routerLink="/cart">
+        <mat-icon>shopping_cart</mat-icon>
+      </div>
+      
+    </div>
+  </nav>
+</header>

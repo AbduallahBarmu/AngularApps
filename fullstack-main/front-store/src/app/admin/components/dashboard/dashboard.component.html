@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="demo-button-container">
+    <button
+      mat-raised-button
+      class="add-button"
+      data-toggle="modal"
+      data-target="#viewCart"
+      routerLink="/addform/"
+    >
+      <mat-icon class="cart-icon">add_circle </mat-icon>
+      <span> Add Product</span>
+    </button>
+  </div>
+
+  <table id="products">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Region</th>
+        <th>Price</th>
+        <th>Operation</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of products">
+        <td>{{ item.name }}</td>
+        <td>{{ item.region }}</td>
+        <td>${{ item.price }}</td>
+        <td>
+          <button
+            class="delete-btn"
+            type="button"
+            (click)="deleteProduct(item._id)"
+          >
+            <mat-icon class="cart-icon">delete</mat-icon>
+          </button>
+          <button
+            class="edit-btn"
+            type="button"
+            routerLink="/updateProduct/{{ item._id }}"
+          >
+            <mat-icon class="cart-icon">border_color</mat-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
