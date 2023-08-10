@@ -8,13 +8,13 @@ import { PopularMenuComponent } from './popular-menu/popular-menu.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { SharedModule } from '../shared/shared.module';
 import { HeroComponent } from './hero/hero.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [  
     AboutComponent,
-
     ContactUsComponent,
     FooterComponent,
     PopularMenuComponent,
@@ -24,10 +24,11 @@ import { HeroComponent } from './hero/hero.component';
   imports: [
     CommonModule,
     SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[   
     AboutComponent,
- 
     ContactUsComponent,
     FooterComponent,
     PopularMenuComponent,
