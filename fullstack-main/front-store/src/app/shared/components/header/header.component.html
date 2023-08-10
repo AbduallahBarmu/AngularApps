@@ -7,10 +7,10 @@
 
       <div class="nav-items">
         <ul>
-          <li routerLink="/products" routerLinkActive="active">Our Products</li>
-          <li *ngIf="!isLogedIn()" routerLink="/auth" routerLinkActive="active">Login</li>
-          <li routerLink="/dashboard" *ngIf="isLogedIn()">Dashboard</li>
-          <li routerLink="/auth" routerLinkActive="active" *ngIf="isLogedIn()" (click)="authService.logout()">Log Out</li>
+          <li routerLink="/products" routerLinkActive="active">COFFEE</li>
+          <li *ngIf="!isLogedIn()" routerLink="/auth" routerLinkActive="active">LOGIN</li>
+          <li routerLink="/dashboard" *ngIf="isLogedIn()">DASHBOARD</li>
+          <li routerLink="/auth" routerLinkActive="active" *ngIf="isLogedIn()" (click)="authService.logout()">LOG OUT</li>
         </ul>
       </div>
 

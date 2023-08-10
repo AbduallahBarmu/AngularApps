@@ -37,7 +37,7 @@
       align-items: center;
       justify-content: space-around;
       margin-bottom: 30px;
-
+      transition: all 0.3s ease-in-out;
       img {
         width: 159px;
         height: 159px;
@@ -45,6 +45,11 @@
     }
   }
 }
+.col:hover{
+  opacity: 0.9;
+ transform: scale(1.20);
+}
+
 
 @media (max-width: 768px) {
   .delivery-section {
@@ -55,7 +60,10 @@
 
       .col {
         margin-bottom: 20px;
-      }
-    }
-  }
-}
+      }  
+    }  
+  }  
+}  
+
+
+

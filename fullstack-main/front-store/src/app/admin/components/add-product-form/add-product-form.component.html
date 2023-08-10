@@ -1,7 +1,9 @@
 <div class="container">
   <form class="cf" (ngSubmit)="addProduct(form.value)" #form="ngForm">
     <div class="half left cf">
+
       <input
+      class="input"
         type="text"
         id="input-name"
         placeholder="Product Name"
@@ -10,8 +12,9 @@
         [(ngModel)]="data.name"
         required
       />
-
       <input
+      class="input"
+
         type="text"
         id="input-region"
         placeholder="Product Region"
@@ -22,6 +25,7 @@
       />
 
       <input
+      class="input"
         type="number"
         id="input-price"
         placeholder="Product Price"
@@ -44,10 +48,11 @@
       ></textarea>
     </div>
     <div class="upload-image">
-      <div>
-        <!-- <img src="{{data.image}}" alt=""> -->
-      </div>
+      <!-- <div>
+        <img src="{{data.image}}" alt="">
+      </div> -->
       <input
+
         accept="image/*"
         type="file"
         class="form-control"
@@ -59,10 +64,11 @@
       />
     </div>
     <input
+    
+    class="input-submit"
       [disabled]="!form.valid"
       type="submit"
       value="Submit"
-      id="input-submit"
     />
   </form>
 </div>

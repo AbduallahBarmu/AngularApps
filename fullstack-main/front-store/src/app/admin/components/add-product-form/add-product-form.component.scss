@@ -8,37 +8,56 @@ form {
   margin: 60px auto;
   background: #fffaf6;
   border-radius: 5px;
-  color: #7e7975;
+  color: #243264;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2),
     0 0 0 12px rgba(255, 255, 255, 0.4);
-  input {
-    border-color: #7e7975;
+  
+    input {
+    border-color: #243264;
   }
-  input,
-  textarea {
+
+textarea {
     border-radius: 7px;
-    border-color: #a8a8a8;
+    // border-color: #a8a8a8;
     padding: 1em;
     display: block;
     width: 100%;
     margin-top: 1em;
     font-family: "Merriweather", sans-serif;
     resize: none;
-  }
-
-  #input-submit {
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
-    background-color: #ccd5ae;
-    text-align: center;
-  }
-
-  textarea {
     height: 210px;
   }
+
+  .input-submit {
+    border: none;
+    outline: none;
+    font-size: large;
+    font-weight: 900;
+    padding:2rem 9rem;
+    margin-top: 1em; 
+    border-radius: 10px;
+    color: #243264;
+    transform: .3s ease;
+    background-color: #FC6C4C;
+    
+    // cursor: pointer;
+    // font-weight: bold;
+    // font-size: 24px;
+    // text-align: center;
+  }
+  // .input-submit:hover{
+  //   background-color: #ffff;
+  // }
+
+  .input{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    margin-top: 1em;
+  }
+
 }
 
 .half {
@@ -59,6 +78,7 @@ img {
   width: 20%;
   height: 20vh;
 }
+
 @media (max-width: 480px) {
   .half {
     width: 100%;
@@ -66,3 +86,16 @@ img {
     margin-bottom: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
