@@ -1,9 +1,6 @@
 <body>
   <div class="container">
     <div class="box mt-5">
-      <!-- <div class="my-2 w-25">
-      <app-select [data]="categories" [title]="'Categories'" (selectedValue)="filterCategory($event)" ></app-select>
-    </div> -->
       <div class="product-container" *ngIf="!loading">
         <div *ngFor="let item of products">
           <app-product
@@ -21,4 +18,4 @@
   </div>
 </body>
 
-<!-- class="col-md-3 col-sm-12"  -->
+

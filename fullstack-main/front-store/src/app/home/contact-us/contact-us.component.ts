@@ -16,9 +16,9 @@ import { Contact } from '../contact';
 
 export class ContactUsComponent implements OnInit {
 
-  model = new Contact() ; 
-  submitted:boolean = false; 
-  error = {}
+  // model = new Contact() ; 
+  // submitted:boolean = false; 
+  // error = {}
 
   constructor(private router:Router , private service : HomeService){}
 
