@@ -83,17 +83,26 @@
     }
 
     button {
-      font-size: 20px;
-      background: #ff902b;
+ 
       color: white;
       padding: 0.7em 0.8em;
       padding-left: 0.9em;
       display: flex;
       align-items: center;
-      border: none;
       border-radius: 16px;
       overflow: hidden;
       transition: all 0.2s;
+      box-sizing: border-box;
+      border: transparent;
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #ffffff;
+      background-color: #ffcb7c;;
+      cursor: pointer;
+      outline: none;
     }
 
     button span {

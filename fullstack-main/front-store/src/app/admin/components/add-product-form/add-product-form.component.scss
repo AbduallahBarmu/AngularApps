@@ -51,13 +51,18 @@ textarea.form-input {
 .form-button {
   height: 3em;
   width: 8em;
-  border: none;
   border-radius: 7px;
-  background: #ff902b;
-  font-size: 17px;
-  color: #ffffff;
-  font-family: inherit;
+  box-sizing: border-box;
+  border: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #ffcb7c;;
+  cursor: pointer;
+  outline: none;
 }
 
 .form-button:hover {
