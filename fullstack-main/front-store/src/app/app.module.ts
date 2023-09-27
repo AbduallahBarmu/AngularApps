@@ -22,6 +22,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { AdminGuardService } from './auth/services/admin-guard.service';
 import { HomeModule } from './home/home.module';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,7 @@ import { HomeModule } from './home/home.module';
     AuthComponent,
     HomeComponent,
     FooterComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { HomeModule } from './home/home.module';
     HomeModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+
   ],
   providers: [
     AdminGuardService,

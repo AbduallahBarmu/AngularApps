@@ -18,18 +18,21 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { SharedService } from './services/shared.service';
 import {MatTableModule} from '@angular/material/table';
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
      SpinnerComponent,
-      SelectComponent],
+      SelectComponent, 
+
+    ],
   providers: [SharedService],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule,
     HttpClientModule,
-
+    
     // material UI
     MatTableModule,
     MatCardModule,
@@ -50,6 +53,7 @@ import {MatTableModule} from '@angular/material/table';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+ 
   
   ],
 })

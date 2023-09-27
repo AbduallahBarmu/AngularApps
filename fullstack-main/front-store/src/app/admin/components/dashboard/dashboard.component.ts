@@ -10,7 +10,9 @@ import { AdminService } from '../../services/admin.service';
 })
 export class DashboardComponent implements OnInit {
   products: Product[] = []; // interface
+  searchTerm:string =""; 
 
+  
   @Output() newProductEvent = new EventEmitter<Product[]>();
 
   constructor(
