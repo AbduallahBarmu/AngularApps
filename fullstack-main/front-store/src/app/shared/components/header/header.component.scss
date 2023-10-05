@@ -1,3 +1,5 @@
+// @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 header {
   background-color: #ffffff;
   position: fixed;
@@ -40,8 +42,10 @@ nav {
         list-style: none;
         text-decoration: none;
         padding-right: 20px;
-        color: black;
+        color: #ff902b;
+        // font-family: 'Satisfy' ;
         font-family: "Poppins";
+        letter-spacing: 5px;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;

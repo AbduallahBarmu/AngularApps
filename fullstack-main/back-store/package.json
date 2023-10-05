@@ -29,6 +29,7 @@
     "@nestjs/serve-static": "^3.0.0",
     "cors": "^2.8.5",
     "mongoose": "^6.8.2",
+    "nodemailer": "^6.9.5",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
@@ -78,5 +79,4 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   }
-
 }
