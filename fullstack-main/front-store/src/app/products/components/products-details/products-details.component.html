@@ -3,7 +3,6 @@
     <div class="row" *ngIf="!loading">
       <div class="product-img">
         <img src="{{ data.image }}" alt="image" height="420" width="327" />
-
       </div>
       <div class="product-info">
         <div class="product-text">
@@ -13,7 +12,9 @@
         </div>
         <div class="product-price-btn">
           <p><span>{{ data.price }}</span>$</p>
-          <button type="button">Buy Now</button>
+          <button type="button">
+            Buy Now
+          </button>
         </div>
       </div>
     </div>

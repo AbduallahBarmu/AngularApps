@@ -49,6 +49,10 @@ nav {
         font-weight: 400;
         font-size: 18px;
         line-height: 27px;
+        transition: all ease-in-out 0.2s;
+      }
+      li:hover{
+        transform: translateY(+7px);
       }
     }
 

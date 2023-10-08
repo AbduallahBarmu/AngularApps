@@ -3,17 +3,20 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, firstValueFrom } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Product } from '../models/productModels';
+import { cartProduct } from '../models/cartModels';
+
+
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductsService {
-  // item: any;
   public search  = new BehaviorSubject<string>("") ;
-
+  // ProductsLocalStorage: cartProduct[] = [] ; 
+  
   constructor(private http: HttpClient) {}
 
-  // first value from (rx) promise
+
   getAllProductsServ(): Promise<Product[]> {
     return firstValueFrom(
       this.http.get<Product[]>(environment.baseApi + 'products')
@@ -25,6 +28,11 @@ export class ProductsService {
       this.http.get<Product[]>(environment.baseApi + 'products/' + id)
     );
   }
+
+
+
+
+
 
   // getAllCategories(): Promise<Product[]> {
   //   return firstValueFrom(
@@ -47,4 +55,9 @@ export class ProductsService {
   //     // with formData as req
   //     return this.http.post(environment.baseApi , formData)
   // }
+
+
+
+
+
 }
