@@ -17,11 +17,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { SharedService } from './services/shared.service';
 import {MatTableModule} from '@angular/material/table';
+import { FooterComponent } from './components/footer/footer.component'; 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
+    FooterComponent,
      SpinnerComponent,
       SelectComponent, 
 
@@ -32,7 +34,6 @@ import {MatTableModule} from '@angular/material/table';
     RouterModule,
     FormsModule,
     HttpClientModule,
-    
     // material UI
     MatTableModule,
     MatCardModule,
@@ -40,9 +41,11 @@ import {MatTableModule} from '@angular/material/table';
     MatIconModule,
     MatToolbarModule,
     MatFormFieldModule,
+    
   ],
   exports: [
     HeaderComponent,
+    FooterComponent,
     SpinnerComponent,
     RouterModule,
     SelectComponent,

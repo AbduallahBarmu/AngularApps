@@ -18,7 +18,6 @@ import { AuthComponent } from './auth/components/auth/auth.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from './auth/services/token/token-interceptor.service';
 import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
 import { AdminGuardService } from './auth/services/admin-guard.service';
 import { HomeModule } from './home/home.module';
 
@@ -30,17 +29,16 @@ import { HomeModule } from './home/home.module';
     AddProductFormComponent,
     AuthComponent,
     HomeComponent,
-    FooterComponent,
 
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    HomeModule,
+    SharedModule,
     ProductsModule,
     CartsModule,
-    SharedModule,
-    HomeModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
 
