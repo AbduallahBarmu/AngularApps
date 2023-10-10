@@ -147,12 +147,21 @@
   }
 
   .right {
-    // position: relative;
     width: 50%;
+    animation: MoveUpDown 4s linear infinite;
     img {
       width: 350px;
       height: 450px;
       border: none;
+    }
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100px);
     }
   }
 
