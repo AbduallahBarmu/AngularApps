@@ -3,4 +3,3 @@ export interface AuthData {
   password: string;
 
 }
-

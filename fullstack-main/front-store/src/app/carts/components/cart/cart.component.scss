@@ -15,7 +15,7 @@ $color-highlight: #ff3f40;
   padding: 2%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -30,7 +30,6 @@ $color-highlight: #ff3f40;
 
 .clear-btn {
   --color: #cc153d;
-
   display: inline-block;
   width: 7em;
   height: 2.4em;
@@ -39,7 +38,6 @@ $color-highlight: #ff3f40;
   border: 1px solid var(--color);
   transition: color .5s;
   z-index: 1;
-  // font-size: 17px;
   border-radius: 6px;
   font-weight: 500;
   color: var(--color);
@@ -82,11 +80,8 @@ $color-highlight: #ff3f40;
 }
 
 .product-img {
-  // min-width: 20%;
   max-width: 45%;
   height: 6vh;
-  // max-height: auto;
-  // border-radius: 7px;
 }
 
 .product-length {
@@ -116,7 +111,6 @@ $color-highlight: #ff3f40;
   display: grid;
   grid-template-columns: auto;
   gap: 5px;
-  // justify-content: flex-end;
 }
 
 .card {
@@ -134,7 +128,6 @@ $color-highlight: #ff3f40;
   display: flex;
   align-items: center;
   padding: 30px;
-  // border-bottom: 1px solid #efeff3;
   font-weight: 700;
   font-size: 13px;
   color: #63656b;
@@ -152,8 +145,6 @@ $color-highlight: #ff3f40;
 }
 
 .cart .products .product {
-  // display: grid;
-  // grid-template-columns: 60px 1fr 80px 1fr;
   gap: 10px;
   display: flex;
   justify-content: space-around; /* Spread elements evenly horizontally */
@@ -300,33 +291,7 @@ $color-highlight: #ff3f40;
   display: inline-block;
 }
 
-// .checkout .checkout-btn {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   align-items: center;
-//   width: 150px;
-//   height: 36px;
-//   border-radius: 7px;
-
-//   transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-
-//   box-sizing: border-box;
-//   border: transparent;
-//   font-family: 'Raleway', sans-serif;
-//   font-size: 15px;
-//   font-weight: 500;
-//   text-transform: uppercase;
-//   letter-spacing: 0.2em;
-//   color: #ffffff;
-//   background-color: #fcc067;;
-//   cursor: pointer;
-//   outline: none;
-
-// }
-
-
-.checkout .checkout-btn{
+.checkout .checkout-btn {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 400;

@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { AuthService } from '../../services/auth.service';
-import { Router } from '@angular/router';
-import { AuthData } from '../../models/auth';
+import { Component, OnInit } from "@angular/core";
+import { NgForm } from "@angular/forms";
+import { AuthService } from "../../services/auth.service";
+import { Router } from "@angular/router";
+import { AuthData } from "../../models/auth";
 @Component({
-  selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss'],
+  selector: "app-auth",
+  templateUrl: "./auth.component.html",
+  styleUrls: ["./auth.component.scss"]
 })
 export class AuthComponent implements OnInit {
+  
   isLoginMode: boolean = true;
-  isLoading: boolean = false; // initily we are not loading
-  errorMessage: string = ''; // should hold an error message
+  isLoading: boolean = false; // initial we are not loading
+  errorMessage: string = ""; // should hold an error message
   authData: AuthData[] = [];
 
   constructor(public authService: AuthService, private router: Router) {}
@@ -33,23 +34,20 @@ export class AuthComponent implements OnInit {
       try {
         const res = await this.authService.signIn(email, password);
         // set token in the local storage
-        localStorage.setItem('token', res.access_token);
-
-        // redurect route into dashbord page
-        this.router.navigate(['/dashboard']);
-
+        localStorage.setItem("token", res.access_token);
+        // redirect route into dashboard page
+        this.router.navigate(["/dashboard"]);
         this.isLoading = false;
       } catch (error) {
-        this.errorMessage = ' LogIn Faild :(';
+        this.errorMessage = " LogIn Failed :(";
         this.isLoading = false;
       }
     } else {
       try {
         await this.authService.signUp(email, password);
-
         this.isLoading = false;
       } catch (error) {
-        this.errorMessage = ' SignUp Faild :(';
+        this.errorMessage = " SignUp Failed :(";
         this.isLoading = false;
       }
     }

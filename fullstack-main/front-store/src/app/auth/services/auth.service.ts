@@ -35,13 +35,10 @@ export class AuthService {
     this.loggedIn = false
 
     const authData: AuthData = { email: email, password: password };
-    if(authData){
-
-    }
+    // if(authData){}
     return firstValueFrom( 
       this.http.post<AuthData[]>(environment.baseApi + 'admin' ,authData))
   }
-
 
   logout(){
     this.loggedIn = false
@@ -52,4 +49,8 @@ export class AuthService {
   IsAuthenticated(){
     return this.loggedIn
   }
+
+
+
+
 }
