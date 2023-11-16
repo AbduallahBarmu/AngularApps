@@ -104,5 +104,12 @@
   },
   "cli": {
     "analytics": "cdf66d14-2c6e-4380-ade2-2e37dfa9bf8e"
-  }
+  },
+  "budgets": [
+    {
+      "type": "initial",
+      "maximumWarning": "2mb",
+      "maximumError": "5mb"
+    }
+  ]
 }
